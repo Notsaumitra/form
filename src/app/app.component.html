@@ -323,44 +323,7 @@
             </label>
           </div>
         </div>
-
       </div>
-
-      <!--<div class="form-group">
-        <label>Username</label>
-        <input [class.is-invalid]="userName.invalid && regForm.get('userName').touched" formControlName="userName"
-          type="text" class="form-control">
-    
-        <div *ngIf="regForm.get('userName').invalid && regForm.get('userName').touched">
-          <small *ngIf="regForm.get('userName').errors?.required" class="text-danger">Username is required</small>
-          <small *ngIf="userName.errors?.minlength" class="text-danger">Username must be of atleast 3
-            characters</small>get userName() is defined in component class so we can replace regForm.get('userName') by it-->
-      <!---- <small *ngIf="userName.errors?.error" class="text-danger">{{userName.errors?.error.value}} :This name is not allowed</small>
-          </div>
-      </div>
-  
-      <div class="form-group">
-        <label>Password</label>
-        <input formControlName="password" type="password" class="form-control">
-      </div>
-  
-      <div class="form-group">
-        <label>Confirm password</label>
-        <input [class.is-invalid]="regForm.errors?.mismatch" formControlName="confirmPassword" type="password" class="form-control">
-        <small *ngIf="regForm.errors?.mismatch" class="text-danger">Passwords do not match</small>
-      </div>
-  
-      <div class="form-group">
-        <label>Email</label>
-        <button type="button" class="btn btn-secondary btn-sm m-2" (click)="addAlternateEmails()">Add Email</button>
-        <input [class.is-invalid]="email.invalid && email.touched" formControlName="email" type="text" class="form-control">
-        <small class="text-danger" [class.d-none]="email.valid || email.untouched">Email is required</small>
-      <div formArrayName="alternateEmails" *ngFor="let email of alternateEmails.controls; let i=index">
-        <input type="text" class="form-control my-1" [formControlName]="i">
-      </div>
-    -->
-
-
 
       <button class="btn btn-success mt-5 mb-5" type="submit" [disabled]="regForm.valid">Submit</button>
     </form>

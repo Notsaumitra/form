@@ -51,7 +51,7 @@ export class AppComponent implements OnInit{
         lastName:['',Validators.required],
         areaCode:['',Validators.required],
         phoneNumber:['',[Validators.required,Validators.pattern("^[0-9]{10}")]],
-      email:['',[Validators.required,Validators.pattern('/^([a-zA-Z0-9\.-]+)@([a-zA-Z0-9]{3,9})\.([a-z]{2,5})$/')]],
+      email:['',[Validators.required,Validators.pattern('^([a-zA-Z0-9\.-]+)@([a-zA-Z0-9]{3,9})\.([a-z]{2,5})$')]],
       address:this.fb.group({
         street:['',Validators.required],
         streetLine2:['',Validators.required],
